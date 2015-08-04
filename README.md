@@ -10,3 +10,8 @@
 +championship rings. If the user's guess is equal to 6, the message
 +that appears is "Wow you got it!". If they guess wrong, the message
 +"Nope! Sorry!" comes up. That simple.
+
+Added functionality to ask users their name and then use that information in question,
+program now also asks if they want to try again if they answer incorrectly, if they say
+yes they can answer again or they can say no and exit. The program still ends if they
+get the answer right on the first try.
