@@ -1,26 +1,24 @@
 <script>
-	var guess, answer, message, name, goAgain;
-    
-    name = prompt('What\'s your name?');
-    
-	alert('Hello ' + name + ' Let\'s play, \'How many championship rings does Michael Jordan have?!\'');
 	
-	while(goAgain != 'N'){
-	    
-		guess = prompt('Guess a number between 1 and 10!');
+	MichaelJordan = function(correctAnswer,playerGuess) {
+		this.correctAnswer = correctAnswer;
+		this.playerGuess = playerGuess;
+	}
 
-		answer = 6;
+	this.getPlayerGuess = function() {
+		this.playerGuess = prompt('How many championship rings does Michael Jordan have?!');
+	};
+	this.answer = 6;
 
-	    if (guess == answer) {
-		    message = 'Wow you got it!'
-		    goAgain = 'N'
-		    alert(message)
+	MichaelJordan();
+	this.getPlayerGuess();
 
-	    } else {
-		    goAgain = prompt('Nope! Sorry! Do you want to try again Y/N?');
-	    }
-
-    }
-	
 </script>
+
+
+
+
+
+
+
 
