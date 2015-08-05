@@ -1,19 +1,29 @@
 <script>
 	
-	MichaelJordan = function(correctAnswer,playerGuess) {
+	function MichaelJordan(correctAnswer,playerGuess) {
 		this.correctAnswer = correctAnswer;
 		this.playerGuess = playerGuess;
-	}
+	
+
+	this.correctAnswer = 6;
 
 	this.getPlayerGuess = function() {
-		this.playerGuess = prompt('How many championship rings does Michael Jordan have?!');
-	};
-	this.answer = 6;
+		this.playerGuess = prompt('How many championship rings does Michael Jordan have?') 
+			if (this.playerGuess == this.correctAnswer) {
+				alert('You guessed it, you were right!');
+			} else {
+				alert('Nope, sorry! Keep guessing.');
+			}
+		}
+	
+	}
 
 	MichaelJordan();
 	this.getPlayerGuess();
 
 </script>
+
+ 
 
 
 
