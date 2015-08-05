@@ -17,8 +17,16 @@ yes they can answer again or they can say no and exit. The program still ends if
 get the answer right on the first try.
 
 
+
+
 8/5/15 Bella
 After I cloned Ruben's game, I realized the directory contained the README and a sub-directory(guessing_game) which contained game.html
 Asked Dale about it to make sure I was going to avoid some other weird gituation, and he advised moving game.html up one directory and removing the sub-directory, then pushing it back and creating a pull request. Did that, and Ruben confirmed and merged.
 
 Opened and ran the game, and noticed that after I played and lost several times and answered "n" instead of "y" to "Do you want to play again?" that the alert continues to pop up asking me to guess a number even though I said no. Cancel does not close alert window. Window will close after I win, though.
+
+Discussed errors with Ruben - they are definitely errors, so we adjusted the code to reflect back to his original game enough to get the code working again.
+
+Refactoring game to contruct functions that represents variables as properties, and adding method.
+
+Got game to open and alert, if not fucntion completely.
