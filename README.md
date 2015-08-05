@@ -34,3 +34,5 @@ Made some more changes, game stopped opening.
 Made even more changes, game opens again, but alert does not repeat if answer wrong. Also tells you you're wrong even if you guess right.
 
 Got it to return correct alert if answer is correct!
+
+Struggled with getting this to loop if you get the answer wrong, for a while, but Emre helped to refactor the code to improve, then to add a while loop that works!
