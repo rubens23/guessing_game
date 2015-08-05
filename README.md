@@ -30,3 +30,7 @@ Discussed errors with Ruben - they are definitely errors, so we adjusted the cod
 Refactoring game to contruct functions that represents variables as properties, and adding method.
 
 Got game to open and alert, if not fucntion completely.
+Made some more changes, game stopped opening. 
+Made even more changes, game opens again, but alert does not repeat if answer wrong. Also tells you you're wrong even if you guess right.
+
+Got it to return correct alert if answer is correct!
