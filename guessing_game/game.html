@@ -1,23 +1,26 @@
 <script>
-	var guess, answer, message;
+	var guess, answer, message, name, goAgain;
+    
+    name = prompt('What\'s your name?');
+    
+	alert('Hello ' + name + ' Let\'s play, \'How many championship rings does Michael Jordan have?!\'');
+	
+	while(goAgain != 'N'){
+	    
+		guess = prompt('Guess a number between 1 and 10!');
 
+		answer = 6;
 
-	alert("Let's play, 'How many championship rings does Michael Jordan have?!'");
+	    if (guess == answer) {
+		    message = 'Wow you got it!'
+		    goAgain = 'N'
+		    alert(message)
 
-	guess = prompt("Guess a number between 1 and 10!");
+	    } else {
+		    goAgain = prompt('Nope! Sorry! Do you want to try again Y/N?');
+	    }
 
-	answer = 6;
-
-	if (guess == answer) {
-		message = "Wow you got it!"
-	}
-
-	else {
-		message = "Nope! Sorry!"
-	}
-
-	alert(message)
-
+    }
 	
 </script>
 
