@@ -1,25 +1,32 @@
 <script>
 	
-	function MichaelJordan(correctAnswer,playerGuess) {
-		this.correctAnswer = correctAnswer;
-		this.playerGuess = playerGuess;
-	
+	var basketballPlayer = function(rings, name) {
+		this.name = name;
+		this.rings = rings;
+		this.attempts = 5;
 
-	this.correctAnswer = 6;
 
 	this.getPlayerGuess = function() {
-		this.playerGuess = prompt('How many championship rings does Michael Jordan have?') 
-			if (this.playerGuess == this.correctAnswer) {
+
+		while(this.attempts) {
+			
+		
+		var guess = prompt("How many championship rings does " + this.name + " have?") 
+			if (guess == this.rings) {
 				alert('You guessed it, you were right!');
+				this.attempts = 0;
 			} else {
 				alert('Nope, sorry! Keep guessing.');
+				this.attempts--;
 			}
 		}
-	
+		}
 	}
 
-	MichaelJordan();
-	this.getPlayerGuess();
+	var michaelJordan = new basketballPlayer(6, "Michael Jordan");
+	michaelJordan.getPlayerGuess();
+
+
 
 </script>
 
