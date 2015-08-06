@@ -10,6 +10,7 @@
 		<img src="http://www.unitedcenter.com/assets/1/7/jordan-statue.jpeg">
 		<h1>Welcome to my Guessing Game!</h1>
 	</header>
+	
 	<section>
 		<h2>Like Mike</h2>
 			<p>Michael Jeffrey Jordan was the greatest basketball player to ever live. He spent most of his career with the Chicago Bulls winning multiple championships
@@ -24,10 +25,48 @@
 			</p>
 	</section>		  
 
-	<button type="button" onclick="myFunction()">Click Me!</button>
+	<button type="button" onclick="btnclick()">Click Me!</button>
 
 	<footer>
 		<p>Goodbye!</p>
 	</footer>
+
+<script>
+		var basketballPlayer = function(rings, name) {
+		this.name = name;
+		this.rings = rings;
+		this.attempts = 5;
+		this.guess = '';
+
+		this.getPlayerGuess = function() {
+			console.log("getPlayerGuess");
+
+		while(this.attempts) {
+			
+		this.guess = prompt("How many championship rings does " + this.name + " have?") 
+			if (this.guess == this.rings) {
+				alert('You guessed it, you were right!');
+				this.attempts = 0;
+			} else {
+				prompt('Nope, sorry! Keep guessing.');
+				this.attempts--;
+			}
+		}
+	}
+};
+
+	function btnclick(){
+		var michaelJordan = new basketballPlayer(6, "Michael Jordan");
+	 	console.dir(michaelJordan);
+	 	michaelJordan.getPlayerGuess();
+	}
+
+</script>
+
 </body>
 </html>
+
+
+
+
+
