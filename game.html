@@ -55,10 +55,12 @@
 
 	this.getPlayerGuess = function() {
 
+		user = prompt('What is your name?'); 
+
 		while(this.attempts) {
 			
 		
-		var guess = prompt("How many championship rings does " + this.name + " have?") 
+		var guess =prompt('Hey ' + user + '!' + ' Can you guess how many championship rings ' + this.name + ' has?')
 			if (guess == this.rings) {
 				alert('You guessed it, you were right!');
 				this.attempts = 0;
@@ -70,8 +72,11 @@
 		}
 	}
 
-	var michaelJordan = new basketballPlayer(6, "Michael Jordan");
-	michaelJordan.getPlayerGuess();
+	function btnclick(){
+			var michaelJordan = new basketballPlayer(6, "Michael Jordan");
+		 	console.dir(michaelJordan);
+		 	michaelJordan.getPlayerGuess();
+		}
 
 </script>
 

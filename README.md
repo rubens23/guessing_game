@@ -38,4 +38,4 @@ Got it to return correct alert if answer is correct!
 Struggled with getting this to loop if you get the answer wrong, for a while, but Emre helped to refactor the code to improve, then to add a while loop that works!
 
 8/7/15 Ruben
-Added html content to my guessing with a button that starts the game using an onclick html add in function.
+Added html content to my guessing with headers, footers, p tags and a picture of the Jordan statue in Chicago. Added an attribute button that starts the game using an onclick function connected to my javascript code. 
