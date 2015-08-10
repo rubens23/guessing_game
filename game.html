@@ -26,59 +26,36 @@
 	</section> 
 
 	<section> 
-		<h3>Game</h3>
-			<p> Based on the information given to you above, please check out my guessing game by clicking the button below and see if your knowledge of the greatest to ever do it is up to par. If you guess the answer right, you win! If not, you must continue the game until you defeat it. Sorta like Jumanji ;). Choose your answer wisely and good luck!
-			</p>
+		<h3>Read All Instructions</h3>
+			<ol>
+				<li>Based on the information given above, see if you can beat my guessing game!</li>
+				<li>First things first, click the button below.</li>
+				<li>Enter in your name</li>
+				<li>After reading the question, see if you can guess the answer by choosing a number between 1 and 10.</li>
+				<li>If you guess it right, you win!</li>
+				<li>If not, you have to keep playing in order to beat the game. Sorta like Jumanji ;).</li>
+				<li>You get one hint. Good luck, and have fun!</li>
+			</ol>
 	</section>
 	
-		<h3>Hints</h3>	
+		<h3>Hints</h3>
+		<ul id="hint-list"></ul>
 	
 		<h3>Guesses</h3>
 	
 
-	<button type="button" onclick="btnclick()">Click Me!</button>
+	<button type="button" onclick="MyGuessingGame()">Click Me!</button>
 
 	<footer>
 		<p>Goodbye!</p>
 	</footer>
+	
+	<script src="main.js"></script>
 
 </body>
 </html>
 
-<script>
-	
-	var basketballPlayer = function(rings, name) {
-		this.name = name;
-		this.rings = rings;
-		this.attempts = 5;
 
-
-	this.getPlayerGuess = function() {
-
-		user = prompt('What is your name?'); 
-
-		while(this.attempts) {
-			
-		
-		var guess =prompt('Hey ' + user + '!' + ' Can you guess how many championship rings ' + this.name + ' has? Guess a number between 1-10.')
-			if (guess == this.rings) {
-				alert('You guessed it, you were right!');
-				this.attempts = 0;
-			} else {
-				alert('Nope, sorry! Keep guessing.');
-				this.attempts--;
-			}
-		}
-		}
-	}
-
-	function btnclick(){
-			var michaelJordan = new basketballPlayer(6, "Michael Jordan");
-		 	console.dir(michaelJordan);
-		 	michaelJordan.getPlayerGuess();
-		}
-
-</script>
 
 
 

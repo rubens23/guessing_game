@@ -39,3 +39,6 @@ Struggled with getting this to loop if you get the answer wrong, for a while, bu
 
 8/7/15 Ruben
 Added html content to my guessing with headers, footers, p tags and a picture of the Jordan statue in Chicago. Added an attribute button that starts the game using an onclick function connected to my javascript code. 
+
+8/10/15 Ruben
+Created main.js file and put it between script tags in game.html. Added hint to guessing game so that if the user guesses too high or low, the game will prompt them to guess higher or lower. Created hint attribute in my game.html that connects to addToHintList function in main.js.
